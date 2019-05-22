@@ -45,11 +45,12 @@ end
 def shortened_tweet_truncator(tweet)
 
   shortened_tweet = selective_tweet_shortener(tweet)
-  shortened_tweet.truncate(140)
-  binding.pry
+
+
   if shortened_tweet.length > 140
     shortened_tweet.truncate(140)
     #shortened_tweet[138..140] = "..."
+    binding.pry
     shortened_tweet
   end
 end
