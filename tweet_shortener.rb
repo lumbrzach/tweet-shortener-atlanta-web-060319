@@ -48,7 +48,6 @@ def shortened_tweet_truncator(tweet)
   if shortened_tweet.length > 140
     extra_shortened_tweet = "#{shortened_tweet[0..138]} + "...""
     #binding.pry
-    extra_shortened_tweet
   else
     return shortened_tweet
   end
